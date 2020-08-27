@@ -1,0 +1,74 @@
+.jumbotron {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #e9ecef;
+  border-radius: .3rem
+}
+
+.container {
+  min-width: 992px!important
+}
+
+.form-group {
+  margin-bottom: 1rem
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff
+}
+
+.btn-link {
+  font-weight: 400;
+  color: #007bff;
+  text-decoration: none
+}
+
+.text-primary {
+  color: #007bff!important
+}
+
+.text-danger {
+  color: #dc3545!important
+}
+
+.col-md {
+  -ms-flex: 0 0 66.666667%;
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%
+}
+
+.col-lg {
+  -ms-flex: 0 0 66.666667%;
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%
+}
+
+.offset-md {
+  margin-left: 16.666667%
+}
+
+.offset-lg {
+  margin-left: 16.666667%
+}

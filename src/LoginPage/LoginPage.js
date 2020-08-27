@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { userActions } from '../actions';
+import '../App/App.css';
 
 function LoginPage() {
     const [inputs, setInputs] = useState({
@@ -34,7 +35,7 @@ function LoginPage() {
     }
 
     return (
-        <div>
+        <div className="col-lg offset-lg">
             <h2>Login</h2>
             <form name="form" onSubmit={handleSubmit}>
                 <div className="form-group">
@@ -44,15 +45,15 @@ function LoginPage() {
                         <div className="invalid-feedback">Username is required</div>
                     }
                 </div>
-                <div>
+                <div className="form-group">
                     <label>Password</label>
                     <input type="password" name="password" value={password} onChange={handleChange} className={'form-control' + (submitted && !password ? ' is-invalid' : '')} />
                     {submitted && !password &&
                         <div className="invalid-feedback">Password is required</div>
                     }
                 </div>
-                <div>
-                    <button>
+                <div className="form-group">
+                    <button className="btn btn-primary">
                         {loggingIn && <span className="spinner-border spinner-border-sm mr-1"></span>}
                         Login
                     </button>

@@ -8,6 +8,7 @@ import { PrivateRoute } from '../components';
 import { HomePage } from '../HomePage';
 import { LoginPage } from '../LoginPage';
 import { RegisterPage } from '../RegisterPage';
+import './App.css';
 
 function App() {
     const alert = useSelector(state => state.alert);
@@ -23,7 +24,7 @@ function App() {
     return (
         <div className="jumbotron">
             <div className="container">
-                <div className="col-md-8 offset-md-2">
+                <div className="col-md offset-md">
                     {alert.message &&
                         <div className={`alert ${alert.type}`}>{alert.message}</div>
                     }

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { userActions } from '../actions';
+import '../App/App.css';
 
 function HomePage() {
     const users = useSelector(state => state.users);
@@ -18,7 +19,7 @@ function HomePage() {
     }
 
     return (
-        <div className="col-lg-8 offset-lg-2">
+        <div className="col-lg offset-lg">
             <h1>Hi {user.firstName}!</h1>
             <p>You're logged!!</p>
             <h3>All registered users:</h3>
